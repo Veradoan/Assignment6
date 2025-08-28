@@ -16,7 +16,6 @@ public class FindTheMaxAndMin {
             num[i]=keyboard.nextInt();
         }
         System.out.println("Array: "+Arrays.toString(num));
-        //Find max and min
         int max=num[0];
         int min=num[0];
        for(int i=0;i<n;i++){
@@ -32,3 +31,4 @@ public class FindTheMaxAndMin {
     }
 
 }
+
