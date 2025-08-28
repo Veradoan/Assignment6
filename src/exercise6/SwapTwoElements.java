@@ -18,8 +18,6 @@ public class SwapTwoElements {
         
         System.out.print("Enter the number of element: ");
         int n = kb.nextInt();
-
-        // Nhập mảng
         int[] arr = new int[n];
         System.out.println("Enter the elements:");
         for (int i = 0; i < n; i++) {
@@ -44,6 +42,7 @@ public class SwapTwoElements {
        
     }
 }
+
 
 
 
