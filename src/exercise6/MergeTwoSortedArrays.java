@@ -4,8 +4,6 @@ import java.util.Arrays;
 import java.util.Scanner;
 
 public class MergeTwoSortedArrays {
-
-    // Method to merge two sorted arrays into one sorted array
     public static int[] merge(int[] arr1, int[] arr2) {
         int n1 = arr1.length;
         int n2 = arr2.length;
@@ -13,7 +11,6 @@ public class MergeTwoSortedArrays {
 
         int i = 0, j = 0, k = 0;
 
-        // Merge until one of the arrays is exhausted
         while (i < n1 && j < n2) {
             if (arr1[i] <= arr2[j]) {
                 result[k] = arr1[i];
@@ -24,15 +21,12 @@ public class MergeTwoSortedArrays {
             }
             k++;
         }
-
-        // Copy remaining elements of arr1 (if any)
         while (i < n1) {
             result[k] = arr1[i];
             i++;
             k++;
         }
 
-        // Copy remaining elements of arr2 (if any)
         while (j < n2) {
             result[k] = arr2[j];
             j++;
@@ -53,8 +47,6 @@ public class MergeTwoSortedArrays {
         for (int i = 0; i < n1; i++) {
             arr1[i] = sc.nextInt();
         }
-
-        // Input for array 2
         System.out.print("Enter the number of elements in array 2: ");
         int n2 = sc.nextInt();
         int[] arr2 = new int[n2];
@@ -71,3 +63,4 @@ public class MergeTwoSortedArrays {
         sc.close();
     }
 }
+
